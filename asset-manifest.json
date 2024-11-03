@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/emojiCount/static/css/main.a5acba19.css",
-    "main.js": "/emojiCount/static/js/main.ece8c860.js",
+    "main.js": "/emojiCount/static/js/main.117cb05b.js",
     "static/js/453.5342761d.chunk.js": "/emojiCount/static/js/453.5342761d.chunk.js",
     "index.html": "/emojiCount/index.html",
     "main.a5acba19.css.map": "/emojiCount/static/css/main.a5acba19.css.map",
-    "main.ece8c860.js.map": "/emojiCount/static/js/main.ece8c860.js.map",
+    "main.117cb05b.js.map": "/emojiCount/static/js/main.117cb05b.js.map",
     "453.5342761d.chunk.js.map": "/emojiCount/static/js/453.5342761d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a5acba19.css",
-    "static/js/main.ece8c860.js"
+    "static/js/main.117cb05b.js"
   ]
 }
