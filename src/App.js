@@ -31,7 +31,12 @@ function App() {
     onChange={handleSubmit}
     placeholder="do tell" id="story" name="story" rows="5" cols="33" ref={inputRef}>
     </textarea>
-    {isShow && <h2>{JSON.stringify(emojiCounts)}</h2>}
+    {isShow &&
+      <div>
+        <h2>{JSON.stringify(emojiCounts)}</h2>
+        <p>top 3 most common emojis in this sentence are {Object.values(emojiCounts)[0]}, {Object.values(emojiCounts)[1]} and {Object.values(emojiCounts)[]}</p>
+      </div>
+    }
   </div>
   );
 }
