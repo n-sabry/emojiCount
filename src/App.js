@@ -26,16 +26,17 @@ function App() {
 
   return (
   <div className="center">
-    <label for="story">emojiCount</label>
+    <h1>emojiCount</h1>
     <textarea 
     onChange={handleSubmit}
     placeholder="do tell" id="story" name="story" rows="5" cols="33" ref={inputRef}>
     </textarea>
-    {isShow &&
-      <div>
-        <h2>total counts: {JSON.stringify(emojiCounts) || ''}</h2>
-        <h2>top 4 emojis in input are {Object.values(emojiCounts)[0][0]}, {Object.values(emojiCounts)[1][0]}, {Object.values(emojiCounts)[2][0]} and {Object.values(emojiCounts)[3][0]}</h2>
-      </div>
+    {isShow && emojiCounts && emojiCounts.length > 0 ? 
+        <div>
+          <h2>total counts: {JSON.stringify(emojiCounts) || ''}</h2>
+          <h2>top 4 emojis in input are {Object.values(emojiCounts)[0][0]}, {Object.values(emojiCounts)[1][0]}, {Object.values(emojiCounts)[2][0]} and {Object.values(emojiCounts)[3][0]}</h2>
+        </div>
+        : <h2>no emojis detected</h2>
     }
   </div>
   );
