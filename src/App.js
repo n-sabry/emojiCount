@@ -33,8 +33,8 @@ function App() {
     </textarea>
     {isShow &&
       <div>
-        <h2>{JSON.stringify(emojiCounts)}</h2>
-        <p>top 3 most common emojis in this sentence are {Object.values(emojiCounts)[0]}, {Object.values(emojiCounts)[1]} and {Object.values(emojiCounts)[]}</p>
+        <h2>total counts: {JSON.stringify(emojiCounts) || ''}</h2>
+        <h2>top 4 emojis in input are {Object.values(emojiCounts)[0][0]}, {Object.values(emojiCounts)[1][0]}, {Object.values(emojiCounts)[2][0]} and {Object.values(emojiCounts)[3][0]}</h2>
       </div>
     }
   </div>
